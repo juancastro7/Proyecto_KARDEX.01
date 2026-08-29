@@ -1,1 +1,18 @@
+📱 App Escáner
+Una aplicación móvil desarrollada con Flutter para el escaneo rápido de códigos de barras, gestión de precios y control de inventario en tiempo real.
 
+El proyecto cuenta con un sistema offline-first mediante SQLite, lo que permite registrar y consultar productos sin conexión a internet, sincronizando automáticamente la información en la nube con Firebase (Firestore) en cuanto el usuario inicia sesión.
+
+✨ ¿Qué hace la aplicación?
+📷 Escaneo de códigos: Lee códigos de barras y códigos QR en tiempo real utilizando la cámara del dispositivo.
+📦 Gestión de productos: Permite buscar, registrar, editar y eliminar productos con detalles como nombre, precio y código.
+📊 Control de stock: Administra el inventario con un sistema de semáforo visual (🟢 Normal, 🟡 Stock bajo, 🔴 Sin stock) y alertas de stock mínimo.
+☁️ Sincronización en la nube: Guarda los datos en Firebase Firestore asociados a la cuenta de cada usuario para acceder a ellos desde cualquier dispositivo.
+💾 Almacenamiento local: Funciona sin conexión a internet guardando los registros en una base de datos local SQLite.
+
+🛠️ Tecnologías clave
+Frontend: Flutter & Dart
+Base de datos local: SQLite (sqflite)
+Base de datos en la nube: Firebase Cloud Firestore
+Autenticación: Firebase Authentication
+Escáner: mobile_scanner
